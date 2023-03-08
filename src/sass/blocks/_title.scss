@@ -1,0 +1,32 @@
+.title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 0.88;
+    text-align: center;
+    color: $main-text;
+    text-transform: uppercase;
+    margin: 0;
+    &__devider {
+        width: 200px;
+        height: 2px;
+        background-color: #fff;
+        margin: 20px auto 0 auto;
+    }
+    &__subtitle {
+        max-width: 880px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.yellow {
+    background-clip: text;
+    background-image: url(../img/yellow-min.png);
+    background-position: 541%;
+    color: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+}

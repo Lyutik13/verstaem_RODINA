@@ -1,0 +1,44 @@
+.advantage {
+    padding: 50px 0;
+    // background-color: $main-color;
+    background: #9d241b url(../img/red.png) ;
+    &__items {
+        display: flex;
+        margin-top: 50px;
+        margin: 30px -15px 0 -15px;
+    }
+    &__item {
+        width: 33.333%;
+        min-height: 550px;
+        text-align: center;
+        margin: 0 15px;
+        clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+        background-color: #bb2c21;
+        padding: 30px 15px 70px 15px;
+    }
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+        width: 150px;
+        height: 150px;
+        & img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__desc {
+        color: #fff;
+        margin-bottom: 150px;
+    }
+}

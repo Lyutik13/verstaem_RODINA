@@ -1,0 +1,25 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/fonts";
+@import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+    font-family: "Red October", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import "blocks/button";
+@import "blocks/title.scss";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/about";
+@import "blocks//advantage.scss";

@@ -1,0 +1,96 @@
+.btn {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    z-index: 2;
+    span {
+        font-family: "Pobeda";
+        width: 200px;
+        background-color: $main-color;
+        display: inline-block;
+        line-height: 22px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: $main-text;
+        font-style: normal;
+        text-transform: uppercase;
+        padding: 8px 15px;
+        font-size: 24px;
+        z-index: 2;
+        text-align: center;
+    }
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    background-color: $main-color;
+    top: 0;
+    left: 0;
+    transition: 0.35s ease;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    background-color: $main-color;
+    top: 0;
+    right: 0;
+    transition: 0.35s ease 0.1s;
+}
+
+.btn span:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    background-color: $main-color;
+    bottom: 0;
+    left: 0;
+    transition: 0.35s ease 0.2s;
+}
+
+.btn span:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    background-color: $main-color;
+    bottom: 0;
+    right: 0;
+    transition: 0.35s ease 0.3s;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn:hover:before {
+    width: 80%;
+    background-color: #fff;
+}
+
+.btn:hover:after {
+    height: 80%;
+    background-color: #fff;
+}
+
+.btn:hover span {
+    background-color: #bb2c21;
+
+    color: #fff;
+}
+
+.btn:hover span:before {
+    height: 80%;
+    background-color: #fff;
+}
+
+.btn:hover span:after {
+    width: 80%;
+    background-color: #fff;
+}

@@ -1,0 +1,59 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: $main-color;
+    z-index: 5;
+    &__items {
+        max-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 80px;
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: $main-text;
+    &__item {
+        height: 100%;
+        padding: 0;
+        border-bottom: 3px solid transparent;
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            padding: 3px 10px;
+            text-decoration: none;
+            font-family: "Pobeda";
+            font-size: 24px;
+            color: $main-text;
+            transition: 0.2s all;
+            &:hover {
+                color: #fff;
+            }
+        }
+        &:hover {
+            border-color: #fff;
+        }
+    }
+}
